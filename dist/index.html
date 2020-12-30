@@ -1,1 +1,19 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title></head><body></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Portfolio</title><link rel="stylesheet" href="css/fonts.css"><link rel="stylesheet" href="css/style.min.css"></head><body><section class="header"><header><a href="#" class="header__logo">Pavel Gamov</a><div class="header__toggle" onclick="menuToggle();"></div></header><div class="header__glass"></div><div class="content"><h2>Web-developer<br><span>Самое время запустить бизнес в интернете!</span></h2></div><video class="header__video" src="video/bg_1.mp4" autoplay muted loop></video><ul class="sci"><li class="li" style="--i:1"><a href="#">Instagram</a></li><li class="li" style="--i:2"><a href="#">Telegram</a></li><li class="li" style="--i:3"><a href="#">Whatsapp</a></li></ul><ul class="navigation"><li style="--i:1;"><a href="#">Главная</a></li><li style="--i:2;"><a href="#">Обо мне</a></li><li style="--i:3;"><a href="#">Портфолио</a></li><li style="--i:4;"><a href="#">Контакты</a></li></ul></section><script type="text/javascript">function menuToggle() {
+        const toggleMenu = document.querySelector('.header__toggle');
+        const section = document.querySelector('.header__glass');
+        const content = document.querySelector('.content');
+        const sci = document.querySelectorAll('.sci > li');
+        const nav = document.querySelectorAll('.navigation > li');
+
+        toggleMenu.classList.toggle('header__toggle_active');
+        section.classList.toggle('header__glass_active');
+        content.classList.toggle('content_active');
+        for (let link of sci) {
+            link.classList.toggle('active');
+        }
+        for (let link of nav) {
+            link.classList.toggle('active');
+        }
+        
+
+    }</script><script src="js/script.js"></script></body></html>

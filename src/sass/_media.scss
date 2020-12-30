@@ -1,0 +1,25 @@
+@media (max-width: 991px) {
+    header {
+        padding: 20px;
+    }
+    .sci {
+        bottom: 20px;
+        right: 20px;
+    }
+    .header {
+        padding: 20px 0;
+        &__glass {
+            width: 50%;
+        }
+    }
+    .content {
+        h2 {
+            font-size: 18vw;
+            span {
+                font-size: 0.25em;
+                letter-spacing: 2px;
+                padding: 0 5px;
+            }
+        }
+    }
+}
