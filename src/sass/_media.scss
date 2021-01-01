@@ -1,25 +1,61 @@
 @media (max-width: 991px) {
-    header {
-        padding: 20px;
-    }
+    
     .sci {
         bottom: 20px;
         right: 20px;
+        margin-left: 20px;
+        li {
+            a {
+                font-size: 10px;
+            }
+        }
     }
     .header {
         padding: 20px 0;
+        &__logo {
+            font-size: 1.25em;
+        }
+        &__toggle {
+            &:before {
+                display: none;
+            }
+            &_active {
+                &::before {
+                    display: none;
+                }
+            }
+        }
         &__glass {
-            width: 50%;
+            &_right {
+                left: 0;
+                width: 100%;
+            }   
+        }
+        header {
+            padding: 20px;
         }
     }
     .content {
+        margin: 0 10px;
         h2 {
-            font-size: 18vw;
+            font-size: 16vw;
             span {
                 font-size: 0.25em;
                 letter-spacing: 2px;
                 padding: 0 5px;
             }
+        }
+    }
+
+    .about {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+        &__header {
+            font-size: 50%;
+        }
+        &__descr {
+            font-size: 10px;
         }
     }
 }
