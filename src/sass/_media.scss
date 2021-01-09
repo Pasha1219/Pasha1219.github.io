@@ -12,6 +12,11 @@
     }
     .header {
         padding: 20px 0;
+
+        &_active {
+            height: auto;
+        }
+
         &__logo {
             font-size: 1.25em;
         }
@@ -25,11 +30,15 @@
                 }
             }
         }
+
         &__glass {
             &_right {
                 left: 0;
                 width: 100%;
             }   
+        }
+        &__video {
+            background-size: cover;
         }
         header {
             padding: 20px;
@@ -47,15 +56,51 @@
         }
     }
 
+    .contact {
+        &__wrapper {
+            padding: 50px;
+        }
+        &__container {
+            flex-direction: column;
+        }
+    }
+
+}
+@media (max-width: 768px) {
     .about {
         left: 50%;
         transform: translateX(-50%);
         width: 70%;
         &__header {
-            font-size: 50%;
+            font-size: 5vw;
         }
         &__descr {
-            font-size: 10px;
+            font-size: 2vw;
+        }
+        &__img {
+            top: 45%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        &_active {
+            min-height: 150vh;
+        }
+    }
+    .about {
+        &__header {
+            font-size: 7vw;
+        }
+        &__descr {
+            font-size: 4vw;
+        }
+        &__img {
+            top: 55%;
         }
     }
 }
