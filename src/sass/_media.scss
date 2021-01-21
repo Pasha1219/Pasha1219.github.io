@@ -63,14 +63,27 @@
         &__container {
             flex-direction: column;
         }
+        &__info {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        &__form {
+            width: 100%;
+        }
     }
 
 }
 @media (max-width: 768px) {
+    .header {
+        &_active {
+            min-height: 150vw;
+        }
+    }
     .about {
         left: 50%;
         transform: translateX(-50%);
         width: 70%;
+        top: 10%;
         &__header {
             font-size: 5vw;
         }
@@ -78,10 +91,15 @@
             font-size: 2vw;
         }
         &__img {
-            top: 45%;
+            top: 30%;
             left: 50%;
             transform: translateX(-50%);
             width: 70%;
+        }
+    }
+    .contact {
+        &__content {
+            margin-top: 20px;
         }
     }
 }
@@ -89,7 +107,7 @@
 @media (max-width: 600px) {
     .header {
         &_active {
-            min-height: 150vh;
+            min-height: 230vw;
         }
     }
     .about {
@@ -100,7 +118,57 @@
             font-size: 4vw;
         }
         &__img {
-            top: 55%;
+            top: 50%;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        &_active {
+            min-height: 240vw;
+        }
+    }
+    .contact {
+        &__content {
+            h2 {
+                font-size: 20px;
+                
+            }
+        }
+        &__box {
+            &__icon {
+                min-width: 40px;
+                height: 40px;
+            }
+            &__text {
+                font-size: 12px;
+            }
+        }
+        &__form {
+            padding: 30px;
+            h2 {
+                font-size: 20px;
+            }
+            &__box {
+                input {
+                    font-size: 12px;
+                }
+                textarea {
+                    font-size: 12px;
+                }
+                span {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 310px) {
+    .header {
+        &_active {
+            min-height: 290vw;
         }
     }
 }
